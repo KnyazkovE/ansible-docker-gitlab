@@ -1,0 +1,10 @@
+- name: Install Docker-Ce
+  apt: name=docker-ce update_cache=yes state=present
+- name: Install Docker python library
+  apt: name=python3-docker state=present update_cache=no
+- name: Install containerd
+  apt: name=containerd.io state=present update_cache=yes
+- name: Install Docker-ce-cli
+  apt: name=docker-ce-cli state=present update_cache=yes
+- name: Install Docker-compose-plugin
+  apt: name=docker-compose-plugin state=present update_cache=yes

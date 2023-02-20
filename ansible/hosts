@@ -1,0 +1,1 @@
+domain-name ansible_host=SERVER_IP ansible_user=USER
